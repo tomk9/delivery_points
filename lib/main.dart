@@ -48,12 +48,6 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(
               '${restaurant.restaurantName == '' ? '' : restaurant.restaurantName + ' - '}$_title'),
           centerTitle: false,
-          actions: <Widget>[
-            IconButton(
-              icon: Icon(Icons.refresh),
-              onPressed: restaurant.isLoading ? null : restaurant.fetchData,
-            )
-          ],
         ),
         body: PageView(
           children: <Widget>[

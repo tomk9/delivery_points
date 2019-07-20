@@ -62,8 +62,8 @@ class Restaurant {
 }
 
 Future<Restaurant> fetchRestaurant() async {
-  final response = await http
-      .get('http://www.mocky.io/v2/5d31d99933000068007ba497?mocky-delay=1s');
+  final response =
+      await http.get('http://www.mocky.io/v2/5d31d99933000068007ba497');
   Restaurant restaurant;
   if (response.statusCode == 200) {
     restaurant =

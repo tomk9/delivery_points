@@ -1,5 +1,6 @@
 import 'package:delivery_points/models/Restaurant.dart';
 import 'package:flutter/foundation.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class RestaurantModel extends ChangeNotifier {
   Restaurant _restaurant;
@@ -31,6 +32,12 @@ class RestaurantModel extends ChangeNotifier {
     } catch (error) {
       isError = true;
       print(error);
+      Fluttertoast.showToast(
+          msg: 'Nie udało sie pobrać nowych danych',
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.BOTTOM,
+          timeInSecForIos: 1,
+          fontSize: 16.0);
     }
     isLoading = false;
     notifyListeners();
