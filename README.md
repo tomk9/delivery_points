@@ -4,6 +4,16 @@
 
 Application for couriers - delivery points.
 
+## Run project
+
+1. Clone this repo.
+2. Run emulator or connect a device over USB
+3. Run commands:
+```
+cd delivery_points
+flutter run
+```
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
