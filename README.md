@@ -4,8 +4,9 @@
 
 Application for couriers - delivery points.
 
-![Screenshot](screenshots/Screenshot_20190720-180852.png)
-![Screenshot](screenshots/Screenshot_20190720-180933.png)
+| Pull to refresh | Navigate to the place |
+| :---: | :---: |
+| ![Screenshot](screenshots/Screenshot_20190720-180852.png) | ![Screenshot](screenshots/Screenshot_20190720-180933.png) |
 
 ## Run project
 
