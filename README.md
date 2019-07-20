@@ -1,3 +1,5 @@
+[![Codemagic build status](https://api.codemagic.io/apps/5d3318fec00ef2000ab2aa4c/5d3318fec00ef2000ab2aa4b/status_badge.svg)](https://codemagic.io/apps/5d3318fec00ef2000ab2aa4c/5d3318fec00ef2000ab2aa4b/latest_build)
+
 # delivery_points
 
 Application for couriers - delivery points.
