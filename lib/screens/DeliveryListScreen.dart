@@ -22,9 +22,11 @@ class _DeliveryListScreenState extends State<DeliveryListScreen> {
               : restaurant.deliveredSpots.length,
           itemBuilder: (context, index) {
             return SpotItem(
-                spot: widget.status == 'UNDELIVERED'
-                    ? restaurant.undeliveredSpots[index]
-                    : restaurant.deliveredSpots[index]);
+              spot: widget.status == 'UNDELIVERED'
+                  ? restaurant.undeliveredSpots[index]
+                  : restaurant.deliveredSpots[index],
+              status: widget.status,
+            );
           },
         ),
         onRefresh: _onRefresh,

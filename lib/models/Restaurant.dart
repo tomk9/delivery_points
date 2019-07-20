@@ -66,7 +66,8 @@ Future<Restaurant> fetchRestaurant() async {
       .get('http://www.mocky.io/v2/5d31d99933000068007ba497?mocky-delay=1s');
   Restaurant restaurant;
   if (response.statusCode == 200) {
-    restaurant = Restaurant.fromJson(json.decode(response.body));
+    restaurant =
+        Restaurant.fromJson(json.decode(utf8.decode(response.bodyBytes)));
     return restaurant;
   } else {
     throw Exception('Failed to fetch records');
