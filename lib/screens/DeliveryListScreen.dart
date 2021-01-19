@@ -15,6 +15,7 @@ class _DeliveryListScreenState extends State<DeliveryListScreen>
     with AutomaticKeepAliveClientMixin<DeliveryListScreen> {
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     return Consumer<RestaurantModel>(
       builder: (context, restaurant, child) =>
           restaurant.restaurantName == '' && restaurant.isLoading
